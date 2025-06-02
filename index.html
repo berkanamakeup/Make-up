@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berkana - Maquillaje Trendy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Baloo+2:wght@400;600&display=swap');
+
+    :root {
+      --color-principal: #b93e77;
+      --color-fondo: #fdf0f5;
+      --color-acento: #f8c4da;
+      --color-texto: #2c2c2c;
+      --fuente-principal: 'Baloo 2', cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--fuente-principal);
+      background-image: linear-gradient(to bottom right, #fdf0f5, #ffe0ec);
+      background-attachment: fixed;
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #eee;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: var(--color-principal);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--color-principal);
+      text-align: center;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      animation: fadeIn 1.2s ease-in-out;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .boton {
+      display: block;
+      width: fit-content;
+      margin: 1.5rem auto;
+      padding: 0.75rem 1.5rem;
+      background: var(--color-principal);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .boton:hover {
+      background: #a83768;
+      transform: scale(1.05);
+    }
+
+    .tendencias img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 12px;
+      margin: 1rem;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .tendencias img:hover {
+      transform: scale(1.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+    }
+
+    .redes {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .redes a img {
+      width: 40px;
+      margin: 0 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .redes a img:hover {
+      transform: scale(1.1);
+    }
+
+    form {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    input[type="email"] {
+      padding: 0.5rem;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      width: 250px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--color-acento);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Berkana</h1>
+    <p>Maquillaje Trendy </p>
+    <img src="unnamed.jpg" alt="Logo Berkana">
+  </header>
+
+  <section>
+    <h2>Bienvenida</h2>
+    <p style="text-align:center; max-width: 600px; margin:auto">Descubre una nueva forma de expresarte a través del maquillaje moderno, natural y con inspiración única. Conoce lo mejor del estilo trendy que potencia tu belleza auténtica.</p>
+  </section>
+
+  <section>
+    <h2>Catálogo Destacado</h2>
+    <p style="text-align:center;">Explora lo más reciente de nuestra colección y encuentra tu próximo favorito.</p>
+    <a class="boton" href="https://catalogo.maquillajetrendyshop.com/catalogo-detal/28-de-mayo/?page=1" target="_blank">Ver Catálogo</a>
+  </section>
+
+  <section class="tendencias">
+    <h2>Nuevas Tendencias</h2>
+    <div class="grid">
+      <img src="1.webp" alt="Kit Stitch ">
+      <img src="2.jpg" alt="Kit Stitch ">
+      <img src="3.jpg" alt="Kit Stitch ">
+      <img src="4.jpg" alt="Kit Stitch ">
+    </div>
+  </section>
+
+  <section>
+    <h2>Compra Aquí</h2>
+    <p style="text-align:center;">Próximamente podrás comprar directamente desde nuestra web. ¡Mantente atenta!</p>
+    <a class="boton" href="#">🛒 Mi Carrito</a>
+  </section>
+
+    <section>
+    <h2>Sobre Nosotros</h2>
+    <p style="text-align:center; max-width: 700px; margin:auto">Berkana es más que maquillaje. Es una comunidad, una identidad y una forma de mostrar al mundo quién eres. Cada producto ha sido pensado para quienes aman lo delicado, lo natural y lo moderno.</p>
+  </section>
+
+  <section>
+    <h2>Contacto, Preguntas y Suscripción</h2>
+    <h3 style="text-align:center; color:var(--color-principal);">Preguntas Frecuentes</h3>
+    <p><strong>¿Hacen envíos a todo el país?</strong><br>Sí, enviamos a todo Colombia.</p>
+    <p><strong>¿Cuánto tiempo tardan los pedidos?</strong><br>Entre 2 y 5 días hábiles según tu ubicación.</p>
+    <p><strong>¿Qué métodos de pago aceptan?</strong><br>Transferencias, pagos por PSE, Nequi y efectivo contra entrega en algunas zonas.</p>
+
+    <h3 style="text-align:center; color:var(--color-principal);">Suscríbete a Novedades</h3>
+    <p style="text-align:center;">Recibe noticias, ofertas y lanzamientos exclusivos directamente en tu correo.</p>
+    <form>
+      <input type="email" placeholder="Tu correo electrónico">
+      <br>
+      <button type="submit" class="boton">Suscribirme</button>
+    </form>
+
+    <h3 style="text-align:center; color:var(--color-principal);">Contáctanos</h3>
+    <p style="text-align:center;">¿Tienes preguntas o quieres hacer un pedido?</p>
+    <div class="redes">
+      <a href="https://wa.me/573223052595" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+      <a href="https://www.instagram.com/berkana_makeup?igsh=NjdwYjE5d3lpbTg4" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Berkana. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
